@@ -1,0 +1,2 @@
+# kerepekpedas
+** Asas Kusahawanan Assiggment 
