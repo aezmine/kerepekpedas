@@ -1,0 +1,213 @@
+
+        /* General Body Styling */
+        body {
+            font-family: 'Montserrat', sans-serif; /* Readable and modern font for main text */
+            margin: 0;
+            padding: 0;
+            background-color: #330000; /* Dark, intense background if image fails */
+            color: #fff; /* Default text color is white for contrast */
+            line-height: 1.6;
+            text-align: center;
+            background-image: url('pic03.png'); /* Gambar background utama - using pic03 for general background as per your last request */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+
+        /* Full-screen overlay for text readability */
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.75); /* Stronger dark overlay */
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box; /* Include padding in height calculation */
+        }
+
+        /* Header Styling */
+        header {
+            padding: 30px 20px;
+            color: white;
+            width: 100%;
+            max-width: 900px;
+        }
+
+        header img {
+            max-width: 180px; /* Slightly larger logo */
+            margin-bottom: 15px;
+            filter: drop-shadow(0 0 10px rgba(255, 255, 0, 0.7)); /* Subtle glow for logo */
+        }
+
+        h1 {
+            font-family: 'Kanit', sans-serif; /* Bold, impactful font for main title */
+            font-size: 4.5em; /* Larger, more dominant title */
+            color: #FFD700; /* Gold/bright yellow for ultimate fire effect */
+            text-shadow: 6px 6px 12px rgba(255, 0, 0, 0.9), 
+                         -6px -6px 12px rgba(255, 100, 0, 0.7); /* Multi-layered fire shadow */
+            margin: 10px 0 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px; /* Spread letters for impact */
+            animation: pulse-glow 2s infinite alternate; /* Subtle breathing glow */
+        }
+
+        @keyframes pulse-glow {
+            from { text-shadow: 6px 6px 12px rgba(255, 0, 0, 0.9); }
+            to { text-shadow: 6px 6px 15px rgba(255, 255, 0, 1), 
+                          -6px -6px 15px rgba(255, 100, 0, 1); }
+        }
+
+        header p {
+            font-family: 'Bebas Neue', cursive; /* Strong, clear font for taglines */
+            font-size: 2.2em; /* Bigger tagline */
+            font-weight: bold;
+            color: #FFA500; /* Bright orange for secondary text */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+            margin: 10px auto;
+        }
+
+        header p span {
+            color: #FF4500; /* Orange-red for price emphasis */
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
+        }
+        
+        /* Section Styling */
+        .section {
+            background-color: rgba(255, 255, 255, 0.95); /* Nearly opaque white for content sections */
+            margin: 40px auto; /* More vertical space */
+            padding: 40px;
+            border-radius: 15px; /* Softer, more modern corners */
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+            max-width: 900px;
+            border: 3px solid #FF4500; /* Fiery border */
+        }
+
+        .section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px; /* Consistent rounded corners */
+            margin-bottom: 25px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            border: 2px solid #FFD700; /* Gold border for images */
+        }
+
+        .section h2 {
+            font-family: 'Kanit', sans-serif; /* Bold heading for sections */
+            font-size: 2.8em;
+            margin-top: 0;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .section p {
+            color: #444; /* Darker text for readability on light background */
+            font-size: 1.1em;
+            line-height: 1.8;
+            text-shadow: none; /* No shadow on internal text */
+        }
+
+        /* Specific Section Colors */
+        .soft-sell h2 {
+            color: #D32F2F; /* Deep red for soft sell */
+        }
+
+        .hard-sell h2 {
+            color: #B71C1C; /* Darker, intense red for hard sell */
+        }
+        .hard-sell p {
+             font-weight: bold; /* Make hard sell text bolder */
+        }
+
+        /* Call to Action Button */
+        .btn-cta {
+            background-color: #FF4500; /* Bright orange-red */
+            color: white;
+            padding: 18px 35px; /* Larger padding */
+            border-radius: 8px; /* Slightly more rounded */
+            text-decoration: none;
+            font-family: 'Bebas Neue', cursive; /* Bold font for CTA */
+            font-size: 1.8em; /* Larger text */
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            display: inline-block;
+            margin-top: 35px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 69, 0, 0.7); /* Glow effect */
+            border: 2px solid #FFD700; /* Gold border for extra pop */
+        }
+
+        .btn-cta:hover {
+            background-color: #FF6F00; /* Lighter orange-red on hover */
+            transform: translateY(-5px); /* Lift effect */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6), 0 0 30px rgba(255, 140, 0, 1); /* More intense glow */
+        }
+
+        /* WhatsApp Button specifics */
+        .btn-cta img {
+            height: 30px; /* Slightly larger WhatsApp icon */
+            vertical-align: middle;
+            margin-right: 10px;
+            filter: invert(100%); /* Make WhatsApp icon white */
+            box-shadow: none; /* Remove section image shadow */
+            border: none; /* Remove section image border */
+        }
+
+        /* Footer Styling */
+        footer {
+            margin-top: 60px;
+            padding: 25px;
+            color: white;
+            font-size: 1em;
+            background-color: rgba(0, 0, 0, 0.8); /* Darker footer background */
+            box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.4);
+        }
+        footer p {
+            color: #ccc; /* Slightly lighter text in footer */
+            margin: 5px 0;
+            text-shadow: none;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3em; /* Adjust for smaller screens */
+            }
+            header p {
+                font-size: 1.5em;
+            }
+            .section h2 {
+                font-size: 2em;
+            }
+            .section p {
+                font-size: 1em;
+            }
+            .btn-cta {
+                font-size: 1.3em;
+                padding: 12px 25px;
+            }
+            header img {
+                max-width: 120px;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2.5em;
+                letter-spacing: 2px;
+            }
+            header p {
+                font-size: 1.2em;
+            }
+            .section {
+                padding: 25px;
+                margin: 20px auto;
+            }
+            .section h2 {
+                font-size: 1.8em;
+            }
+            .btn-cta {
+                font-size: 1.1em;
+                padding: 10px 20px;
+            }
+        }
